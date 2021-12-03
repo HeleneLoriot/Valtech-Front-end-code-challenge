@@ -6,11 +6,14 @@ import Cards from "./components/Cards";
 import './App.css';
 import './reset.css';
 
+// import datas
+import citiesData from "../src/data/cities";
+
 export default function App() {
   return (
     <div className="App">
       <Header />
-      <Cards />
+      <Cards cities={citiesData}/>
     </div>
   );
 }
