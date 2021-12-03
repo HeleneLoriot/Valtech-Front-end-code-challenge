@@ -4,15 +4,13 @@ import PropTypes from 'prop-types';
 import Card from "../Card";
 
 export default function Cards({ cities }) {
-    console.log(cities);
+    // map cities array to display a JSX array 
+    // it provide the proper amount of Card according the cities array's length
+    const cardsList = cities.map( item => <Card key={item.id} {...item}/>)
+
     return (
         <main className="cards-container">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {cardsList}
         </main>
     );
 }
@@ -21,10 +19,6 @@ Cards.propTypes = {
     cities: PropTypes.arrayOf(
         PropTypes.shape({
         id: PropTypes.number.isRequired,
-        country: PropTypes.string.isRequired,
-        city: PropTypes.string.isRequired,
-        summary: PropTypes.string.isRequired,
-        img: PropTypes.string.isRequired,
         }),
     ).isRequired,
 };

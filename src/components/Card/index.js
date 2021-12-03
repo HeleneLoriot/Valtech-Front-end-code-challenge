@@ -1,16 +1,32 @@
-export default function Card() {
+import PropTypes from 'prop-types';
+
+export default function Card( {
+    city,
+    country,
+    id,
+    img,
+    summary
+} ) {
     return (
         <div className="card">
             <h3 className="card__title">
-                ITALY
+                {city}
             </h3>
             <h4 className="card__subtitle">
-                VENICE
+                {country}
             </h4>
             <p className="card__description">
-                Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.
+                {summary}
             </p>
             <button className="card__button">Explore More</button>
             </div>
     );
 }
+
+Card.propTypes = {
+    city: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    img: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+};
