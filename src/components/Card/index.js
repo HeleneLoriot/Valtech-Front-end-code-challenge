@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
 
+// import style
+import './index.css'
+
 export default function Card( {
     city,
     country,

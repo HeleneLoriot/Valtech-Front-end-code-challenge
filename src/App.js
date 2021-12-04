@@ -19,7 +19,7 @@ export default function App() {
     <div className="App">
       <Header 
       title="front-end"
-      subtitle="valtech_"
+      subtitle="valtech"
       content="Lorem ipsum dolor sit amet consectetur adipisicing elit dolor tenetur tempora sapiente quo eveniet fuga modi soluta quod"
       />
       <Cards cities={cities}/>
