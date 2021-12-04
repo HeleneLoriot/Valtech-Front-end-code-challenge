@@ -13,6 +13,7 @@ import citiesData from "../src/data/cities";
 
 export default function App() {
   // global state
+  // eslint-disable-next-line
   const [cities, setCities] = useState(citiesData);
 
   return (

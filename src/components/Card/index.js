@@ -20,7 +20,7 @@ export default function Card( {
 
     // className to change the size of a Card depending on his place on the row
     // larger cards are: the first card, a card with id multiple of 6 and the one immediatly following her
-    const cardClassName = id === 1 || id % 6 === 0 || (id % 6) -1 === 0 ? 'card large-card' : 'card small-card';
+    const cardClassName = id === 1 || id % 6 === 0 || (id % 6) - 1 === 0 ? 'card large-card' : 'card small-card';
     
     return (
         <div  className={cardClassName} style={backgroundImg}>
