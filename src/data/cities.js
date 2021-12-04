@@ -41,7 +41,7 @@ export default [
       id : 6,
       country: 'united kingdom',
       city: 'london',
-      summary: ' London is layered with history, where medieval and Victorian complement a rich and vibrant modern world. The Tower of London and Westminster neighbour local pubs and markets, and time-worn rituals like the changing of the guards take place as commuters rush to catch the Tube.',
+      summary: ' London is layered with history, where medieval and Victorian complement a rich and vibrant modern world. The Tower of London and Westminster neighbour local pubs and markets.',
       img : ' https://images.pexels.com/photos/6618/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     },
   ];

@@ -1,0 +1,19 @@
+/* mobile first */
+.cards-container {
+    padding: 1rem 0;
+}
+
+/* medium style */
+@media (min-width: 768px) {
+    .cards-container {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* large style */
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+}

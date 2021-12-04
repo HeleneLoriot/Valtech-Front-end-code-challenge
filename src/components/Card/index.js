@@ -10,19 +10,33 @@ export default function Card( {
     img,
     summary
 } ) {
+    //style for image in Card background
+    const backgroundImg = {
+        backgroundImage:`url(${img})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+    }
+
+    // className to change the size of a Card depending on his place on the row
+    // larger cards are: the first card, a card with id multiple of 6 and the one immediatly following her
+    const cardClassName = id === 1 || id % 6 === 0 || (id % 6) -1 === 0 ? 'card large-card' : 'card small-card';
+    
     return (
-        <div className="card">
-            <h3 className="card__title">
-                {city}
-            </h3>
-            <h4 className="card__subtitle">
-                {country}
-            </h4>
-            <p className="card__description">
-                {summary}
-            </p>
-            <button className="card__button">Explore More</button>
+        <div  className={cardClassName} style={backgroundImg}>
+            <div className="card__container">
+                <h3 className="card__title">
+                    {country}
+                </h3>
+                <h4 className="card__subtitle">
+                    {city}
+                </h4>
+                <p className="card__description">
+                    {summary}
+                </p>
+                <button className="card__button">Explore More</button>
             </div>
+        </div>
     );
 }
 

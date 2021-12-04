@@ -1,6 +1,6 @@
 /* mobile first */
 .header {
-    height: 200px;
+    height: 300px;
     color: white;
     background-image: radial-gradient(transparent,rgb(60 56 56 / 70%), rgb(37 36 36)), url(https://images.pexels.com/photos/3677087/pexels-photo-3677087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); 
     background-position: center;
@@ -43,7 +43,7 @@
 /* medium style */
 @media (min-width: 768px) {
     .header {
-        height: 300px;
+        height: 400px;
         border-radius: 10px;
     }
 
