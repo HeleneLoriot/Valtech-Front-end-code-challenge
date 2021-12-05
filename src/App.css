@@ -15,7 +15,7 @@
 }
 
 /* large style */
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) {
   .App {
     margin: 4rem;
   }

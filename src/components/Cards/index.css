@@ -3,7 +3,7 @@
     padding: 1rem 0;
 }
 
-/* medium style */
+/* medium and large style */
 @media (min-width: 768px) {
     .cards-container {
         display : flex;
@@ -11,9 +11,4 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-}
-
-/* large style */
-@media (min-width: 1024px) and (max-width: 1280px) {
-
 }

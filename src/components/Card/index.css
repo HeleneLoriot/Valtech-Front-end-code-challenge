@@ -36,6 +36,7 @@
     display: none;
     margin-bottom: 1.5rem;
     font-size: .8em;
+    text-align: center;
 }
 
 
@@ -44,7 +45,7 @@
 }
 
 .card__container:hover {
-    background-color: rgba(63, 57, 57, 0.644);
+    background-color: rgb(74 70 70 / 79%);
     padding: 1rem;
 }
 
@@ -55,11 +56,12 @@
 .card__container:hover > .card__button {
     display: flex;
     border-radius: 5px;
-    padding: .5rem;
+    padding: .5rem 1rem;
     background-color: transparent;
     color: white;
     border: solid 1px white;
     outline: none;
+    font-weight: 700;
 }
 
 
@@ -67,20 +69,48 @@
 @media (min-width: 768px) {
     .card {
         height: 300px;
+        width: calc(50% - .5rem);
+    }
+
+    .card__description {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+
+/* large style */
+@media (min-width: 1024px) {
+    .card {
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .card__container {
+        border-radius: 10px;
     }
 
     .large-card {
         width: calc(50% - .5rem);   
     }
 
+    .card__description {
+        margin-bottom: 3rem;
+    }
+
+    .large-card > .card__container > .card__description {
+        width: 60%;
+    }
+
     .small-card {
         width: calc(25% - .5rem);   
     }
-}
 
-/* large style */
-@media (min-width: 1024px) and (max-width: 1280px) {
-    .card {
-        height: 350px;
+    .card__subtitle {
+        margin-bottom: 2rem;
     }
+
+    .card__container:hover > .card__button {
+        padding: .5rem 1.5rem;
+    }
+
 }
