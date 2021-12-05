@@ -5,7 +5,8 @@
 ## Languages and framework
 
 * HTML  
-* CSS  
+* CSS 
+* JavaScript 
 * React  
 
 ## Launch
